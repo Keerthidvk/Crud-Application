@@ -1,0 +1,137 @@
+.auth-form {
+    max-width: 370px;
+    margin: 50px auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+  }
+
+  .logSignBut button{
+    border:none;
+    border-radius:8px;
+    position: absolute;
+   
+  }
+  .login-but{
+    background: none;
+    color:#000;
+    font-weight: bold;
+    position:absolute;
+    top:0;
+    padding: 10px !important;
+    right:40px;
+  }
+  .login-but:hover{
+    color:#fff;
+  }
+  .signup-but{
+    font-weight: bold;
+    margin-right: 5px;
+    position:absolute;
+    top:0;
+    right:100px;
+    padding: 10px !important;
+  }
+
+ 
+  .auth-form input,
+  .auth-form select {
+    border-radius: 5px;
+    border: 1px solid #000;
+    outline: none;
+    width: 350px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .auth-form select {
+    width: 370px;
+  }
+  .reg-rout{
+    text-decoration: none;
+    font-size: medium;
+  }
+  .auth-form button {
+  
+    width: 370px;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .auth-form button:hover {
+    background-color: #0056b3;
+  }
+  
+ .rout {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .home, .dashboard {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .error {
+    text-align: left !important;
+    color: red;
+    font-size: 0.85rem;
+    margin:0px 0px 5px 0px;
+  }
+  
+  .success-poster {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .poster-content {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  .success-poster {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .poster-content {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+    
