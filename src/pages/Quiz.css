@@ -1,0 +1,145 @@
+/* QUIZ MAIN BOX */
+.quiz-container {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* TITLE */
+.quiz-container h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+  font-weight: 700;
+}
+
+/* QUESTION TEXT */
+.quiz-question {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #222;
+}
+
+/* OPTIONS */
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.quiz-option {
+  background: #f1f3f7;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 16px;
+  color: #333;
+}
+
+.quiz-option:hover {
+  background: #e4e8ef;
+  border-color: #cbd3e1;
+}
+
+/* RADIO BUTTON */
+.quiz-option input {
+  margin-right: 12px;
+  transform: scale(1.2);
+}
+
+/* BUTTONS */
+.next-btn,
+.close-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+.next-btn {
+  background: #3A77FF;
+  color: white;
+}
+
+.next-btn:hover:not(:disabled) {
+  background: #205dff;
+}
+
+.next-btn:disabled {
+  background: #a8befc;
+  cursor: not-allowed;
+}
+
+/* EXIT BUTTON */
+.close-btn.secondary {
+  background: #777;
+  color: white;
+}
+
+.close-btn.secondary:hover {
+  background: #555;
+}
+
+/* RESULT BOX */
+.result {
+  text-align: center;
+}
+
+.result p {
+  font-size: 19px;
+  margin: 12px 0 18px;
+  color: #222;
+  font-weight: 600;
+}
+.certificate-box {
+  width: 100%;
+  padding: 25px;
+  margin: 20px auto;
+  background: #fdfdfd;
+  border: 3px solid #3A77FF;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.cert-name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #222;
+  margin: 10px 0;
+}
+
+.cert-video {
+  font-size: 20px;
+  color: #444;
+  margin: 10px 0;
+}
+
+.cert-footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}

@@ -1,137 +1,220 @@
+/* --- Global Layout --- */
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 40, 0.25);
+  backdrop-filter: blur(8px);
+}
+
+/* --- Container --- */
+.login-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 40px 50px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 380px;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Title --- */
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ffb347, #ffcc33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Form --- */
 .auth-form {
-    max-width: 370px;
-    margin: 50px auto;
-    padding: 2rem;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* --- Input Fields --- */
+.auth-form input,
+.auth-form select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+/* --- Placeholder Color --- */
+.auth-form input::placeholder,
+.auth-form select::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.auth-form input:focus::placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* --- Input Focus --- */
+.auth-form input:focus,
+.auth-form select:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* --- Select Field --- */
+.auth-form select {
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+.auth-form select option {
+  color: #000;
+}
+
+/* --- Buttons --- */
+.login-btn {
+  background: #ffcc33;
+  color: #1e1e1e;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #ffd84a;
+}
+
+/* --- Error & Links --- */
+.error {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.rout {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.reg-rout {
+  color: #ffcc33;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.reg-rout:hover {
+  text-decoration: underline;
+}
+
+/* --- Success Modal --- */
+.success-poster {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.poster-content {
+  background: white;
+  color: #333;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* --- Bottom Buttons --- */
+.logSignBut {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.login-but, .signup-but {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-but {
+  background: #ffffff33;
+  color: white;
+}
+
+.signup-but {
+  background: #ffcc33;
+  color: #1e1e1e;
+}
+
+.login-but:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.signup-but:hover {
+  background: #ffd84a;
+}
+
+/* --- Responsive --- */
+@media (max-width: 450px) {
+  .login-container {
+    width: 90%;
+    padding: 30px 25px;
   }
 
-  .logSignBut button{
-    border:none;
-    border-radius:8px;
-    position: absolute;
-   
-  }
-  .login-but{
-    background: none;
-    color:#000;
-    font-weight: bold;
-    position:absolute;
-    top:0;
-    padding: 10px !important;
-    right:40px;
-  }
-  .login-but:hover{
-    color:#fff;
-  }
-  .signup-but{
-    font-weight: bold;
-    margin-right: 5px;
-    position:absolute;
-    top:0;
-    right:100px;
-    padding: 10px !important;
+  .title {
+    font-size: 30px;
   }
 
- 
-  .auth-form input,
-  .auth-form select {
-    border-radius: 5px;
-    border: 1px solid #000;
-    outline: none;
-    width: 350px;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+  .auth-form h2 {
+    font-size: 20px;
   }
-  .auth-form select {
-    width: 370px;
-  }
-  .reg-rout{
-    text-decoration: none;
-    font-size: medium;
-  }
-  .auth-form button {
-  
-    width: 370px;
-    padding: 0.5rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .auth-form button:hover {
-    background-color: #0056b3;
-  }
-  
- .rout {
-    margin-top: 1rem;
-    text-align: center;
-  }
-  
-  .home, .dashboard {
-    text-align: center;
-    margin-top: 50px;
-  }
-  .error {
-    text-align: left !important;
-    color: red;
-    font-size: 0.85rem;
-    margin:0px 0px 5px 0px;
-  }
-  
-  .success-poster {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-  }
-  
-  .poster-content {
-    background: #fff;
-    padding: 2rem 3rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    text-align: center;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    from { transform: scale(0.9); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-  }
-  .success-poster {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-  }
-  
-  .poster-content {
-    background: #fff;
-    padding: 2rem 3rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    text-align: center;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    from { transform: scale(0.9); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-  }
-    
+}

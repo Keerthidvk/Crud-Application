@@ -1,0 +1,72 @@
+{
+  "12": [
+     {
+      "id": 1,
+      "question": "Which keyword is used to define a class in Java?",
+      "options": ["class", "struct", "define", "object"],
+      "answer": "class"
+    },
+    {
+      "id": 2,
+      "question": "Which method is the entry point of a Java program?",
+      "options": ["start()", "main()", "run()", "init()"],
+      "answer": "main()"
+    },
+    {
+      "id": 3,
+      "question": "Which data type is used to store decimal numbers in Java?",
+      "options": ["int", "float", "char", "boolean"],
+      "answer": "float"
+    },
+    {
+      "id": 4,
+      "question": "What is the default value of an uninitialized int variable?",
+      "options": ["0", "null", "undefined", "1"],
+      "answer": "0"
+    },
+    {
+      "id": 5,
+      "question": "Which operator is used for comparison in Java?",
+      "options": ["=", "==", "===", "<>"],
+      "answer": "=="
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is NOT a primitive data type?",
+      "options": ["int", "String", "boolean", "double"],
+      "answer": "String"
+    },
+    {
+      "id": 7,
+      "question": "Which keyword is used to create an object in Java?",
+      "options": ["alloc", "this", "new", "create"],
+      "answer": "new"
+    },
+    {
+      "id":8 ,
+      "question": "Which OOP concept allows the reuse of code?",
+      "options": ["Encapsulation", "Polymorphism", "Inheritance", "Abstraction"],
+      "answer": "Inheritance"
+    },
+    {
+      "id": 9,
+      "question": "Which symbol is used to end a statement in Java?",
+      "options": [";", ":", ".", ","],
+      "answer": ";"
+    },
+    {
+      "id": 10,
+      "question": "Which loop executes at least once even if the condition is false?",
+      "options": ["for", "while", "do-while", "foreach"],
+      "answer": "do-while"
+    }
+  ],
+  "2": [
+    {
+      "id": 1,
+      "question": "What does HTML stand for?",
+      "options": ["Hyper Machine", "Hyper Text", "High Text", "Hyper Mark"],
+      "answer": "Hyper Text"
+    }
+  ]
+}
